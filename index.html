@@ -1,1 +1,115 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STAGEFLOW | Music Growth</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0b0b10;color:#f5f5f7;font-family:Arial,sans-serif}
+.layout{display:flex;min-height:100vh}
+.sidebar{width:245px;background:#111119;border-right:1px solid #292936;padding:28px 20px}
+.logo{font-size:27px;font-weight:900;letter-spacing:1px}
+.logo span{color:#a855f7}
+.tag{font-size:10px;color:#888;margin:8px 0 40px;letter-spacing:2px}
+.menu-title{font-size:10px;color:#777;margin:25px 10px 12px;letter-spacing:2px}
+.menu a{display:block;padding:13px;margin-bottom:6px;border-radius:8px;color:#aaa;text-decoration:none;font-size:14px}
+.menu a.active,.menu a:hover{background:#29163d;color:#d8a7ff}
+.main{flex:1;min-width:0;padding:35px}
+.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px}
+.topbar h1{font-size:25px}
+.status{background:#192c25;color:#63df9c;border:1px solid #28553d;padding:9px 13px;border-radius:20px;font-size:11px}
+.welcome{background:linear-gradient(110deg,#35164c,#171322);border:1px solid #603582;padding:30px;border-radius:15px;margin-bottom:28px}
+.welcome h2{font-size:26px;margin-bottom:12px}
+.welcome p{color:#c2b5ce;font-size:14px;line-height:1.6}
+.section-title{font-size:18px;margin-bottom:17px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-bottom:30px}
+.card,.panel{background:#14141d;border:1px solid #292936;border-radius:13px;padding:21px}
+.card small{color:#999;font-size:12px}
+.card h3{font-size:28px;margin-top:15px}
+.card p,.panel p{color:#858596;font-size:12px;margin-top:9px;line-height:1.6}
+.content-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.panel h3{font-size:16px;margin-bottom:12px}
+.action{display:inline-block;margin-top:16px;background:#913ce0;color:white;padding:11px 16px;border:0;border-radius:7px;text-decoration:none;font-weight:bold;font-size:12px}
+.footer{color:#666;font-size:11px;margin-top:30px}
+@media(max-width:850px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){
+.layout{display:block}
+.sidebar{width:100%;padding:20px}
+.tag{margin-bottom:18px}
+.menu{display:flex;overflow-x:auto;gap:5px}
+.menu a{white-space:nowrap}
+.menu-title{display:none}
+.main{padding:20px}
+.topbar{align-items:flex-start;flex-direction:column}
+.content-grid{grid-template-columns:1fr}
+.welcome h2{font-size:22px}
+}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+<div class="logo">STAGE<span>FLOW</span></div>
+<div class="tag">MUSIC GROWTH PLATFORM</div>
+<div class="menu-title">PLATAFORMA</div>
+<nav class="menu">
+<a class="active" href="#inicio">◈ Visão geral</a>
+<a href="#estatisticas">▤ Estatísticas</a>
+<a href="#planejamento">▦ Planejamento</a>
+<a href="#inteligencia">✧ Inteligência</a>
+<a href="#oportunidades">◎ Oportunidades</a>
+<a href="#relatorios">▥ Relatórios</a>
+</nav>
+<div class="menu-title">CONTA</div>
+<nav class="menu"><a href="#conta">⚙ Configurações</a></nav>
+</aside>
+
+<main class="main" id="inicio">
+<header class="topbar">
+<h1>Painel de controle</h1>
+<div class="status">● Plataforma em construção</div>
+</header>
+
+<section class="welcome">
+<h2>Sua música merece chegar mais longe.</h2>
+<p>Planeje campanhas, acompanhe resultados e descubra oportunidades para desenvolver sua carreira musical.</p>
+</section>
+
+<h2 class="section-title" id="estatisticas">Visão geral</h2>
+<section class="cards">
+<div class="card"><small>Visualizações</small><h3>—</h3><p>Aguardando integração</p></div>
+<div class="card"><small>Interações</small><h3>—</h3><p>Aguardando integração</p></div>
+<div class="card"><small>Seguidores</small><h3>—</h3><p>Aguardando integração</p></div>
+<div class="card"><small>Campanhas</small><h3>00</h3><p>Gerenciamento de campanhas</p></div>
+</section>
+
+<h2 class="section-title">Central de crescimento</h2>
+<section class="content-grid">
+<div class="panel" id="planejamento">
+<h3>✧ Planejamento</h3>
+<p>Organize publicações e prepare campanhas para suas músicas.</p>
+<a class="action" href="#inteligencia">Explorar</a>
+</div>
+<div class="panel" id="inteligencia">
+<h3>◈ Inteligência musical</h3>
+<p>Transforme dados em decisões para sua carreira artística.</p>
+<a class="action" href="#estatisticas">Explorar</a>
+</div>
+<div class="panel" id="oportunidades">
+<h3>◎ Radar de oportunidades</h3>
+<p>Descubra possibilidades de divulgação, parcerias e conexões.</p>
+</div>
+<div class="panel" id="relatorios">
+<h3>▥ Relatórios</h3>
+<p>Acompanhe o histórico e a evolução das suas campanhas.</p>
+</div>
+</section>
+
+<div class="footer" id="conta">STAGEFLOW © 2026 — MUSIC GROWTH PLATFORM</div>
+</main>
+</div>
+</body>
+</html>
+
